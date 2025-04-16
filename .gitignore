@@ -178,5 +178,6 @@ cython_debug/
 *.keras
 
 # Dossier de sauvegarde du modèle
-model/
-!model/train_model.py
+model/*.h5
+
+
