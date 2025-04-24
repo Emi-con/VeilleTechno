@@ -1,14 +1,12 @@
 # VeilleTechno
 
-✅ Prérequis
-Visual Studio Code installé
-
-Extension Python installée dans VS Code
-
-Python 3.10+ installé sur votre système : https://www.python.org/downloads/
+## Prérequis
+✅Visual Studio Code installé
+✅Extension Python installée dans VS Code
+✅Python 3.10+ installé sur votre système : https://www.python.org/downloads/
 ---
 
-🐍 Mise en place de l'environnement Python:
+##🐍 Mise en place de l'environnement Python:
 1. Création de l’environnement de travail Python
     
     ```bash
@@ -28,15 +26,17 @@ Python 3.10+ installé sur votre système : https://www.python.org/downloads/
     ```
 ---
 
-🧠 Entraînement du modèle de classification
+ 
+##🧠 Entraînement du modèle de classification
 1. Exécuter le script pour entraîner le modèle
     
     ```bash
     python model/train_model.py
     ```
 ---
+
     
-🚀 Démarrage de l’API FastAPI
+##🚀 Démarrage de l’API FastAPI
 1. Création de l’environnement de travail Python
     
     ```bash
@@ -52,7 +52,8 @@ Python 3.10+ installé sur votre système : https://www.python.org/downloads/
    Puis visite pour accéder à l'interface Swagger : 📍 http://127.0.0.1:8000/docs
 ---
 
-❌ Quitter l’environnement virtuel
+
+##❌ Quitter l’environnement virtuel
 
     ```bash
     deactivate
