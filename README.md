@@ -6,7 +6,7 @@ Visual Studio Code installé
 Extension Python installée dans VS Code
 
 Python 3.10+ installé sur votre système : https://www.python.org/downloads/
-
+---
 
 🐍 Mise en place de l'environnement Python:
 1. Création de l’environnement de travail Python
@@ -26,7 +26,7 @@ Python 3.10+ installé sur votre système : https://www.python.org/downloads/
     ```bash
     pip install -r api/requirements.txt
     ```
-
+---
 
 🧠 Entraînement du modèle de classification
 1. Exécuter le script pour entraîner le modèle
@@ -34,6 +34,7 @@ Python 3.10+ installé sur votre système : https://www.python.org/downloads/
     ```bash
     python model/train_model.py
     ```
+---
     
 🚀 Démarrage de l’API FastAPI
 1. Création de l’environnement de travail Python
@@ -49,9 +50,10 @@ Python 3.10+ installé sur votre système : https://www.python.org/downloads/
     ```
       
    Puis visite pour accéder à l'interface Swagger : 📍 http://127.0.0.1:8000/docs
+---
 
 ❌ Quitter l’environnement virtuel
 
-      ```bash
+    ```bash
     deactivate
     ```
