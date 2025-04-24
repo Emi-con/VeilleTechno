@@ -27,12 +27,6 @@ Pour l'utilisation dans Visual Studio Code, installer l'extension pour Python.
     python model/train_model.py
     ```
     
-5. Sortir de l’environnement de travail
-
-      ```bash
-    deactivate
-    ```
-
 Étapes pour le lancement de l'API:
 1. Création de l’environnement de travail Python
     
@@ -46,6 +40,10 @@ Pour l'utilisation dans Visual Studio Code, installer l'extension pour Python.
     uvicorn api.app:app --reload
     ```
       
-      
+   Puis visite pour accéder à l'interface Swagger : 📍 http://127.0.0.1:8000/docs
 
-Puis visite pour accéder à l'interface Swagger : 📍 http://127.0.0.1:8000/docs
+3. Sortir de l’environnement de travail
+
+      ```bash
+    deactivate
+    ```
