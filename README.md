@@ -1,15 +1,21 @@
 # VeilleTechno
 
-Pour l'utilisation dans Visual Studio Code, installer l'extension pour Python.
+✅ Prérequis
+Visual Studio Code installé
 
-Étapes pour exécuter le modèle:
+Extension Python installée dans VS Code
+
+Python 3.10+ installé sur votre système : https://www.python.org/downloads/
+
+
+🐍 Mise en place de l'environnement Python:
 1. Création de l’environnement de travail Python
     
     ```bash
     python -m venv venv
     ```
     
-2. Activation de l’environnement de travail Python pour le dossier racine
+2. Activation de l’environnement de travail virtuel Python pour le dossier racine
     
     ```bash
     .\venv\Scripts\activate
@@ -20,14 +26,16 @@ Pour l'utilisation dans Visual Studio Code, installer l'extension pour Python.
     ```bash
     pip install -r api/requirements.txt
     ```
-    
-4. Exécuter le script pour entraîner le modèle
+
+
+🧠 Entraînement du modèle de classification
+1. Exécuter le script pour entraîner le modèle
     
     ```bash
     python model/train_model.py
     ```
     
-Étapes pour le lancement de l'API:
+🚀 Démarrage de l’API FastAPI
 1. Création de l’environnement de travail Python
     
     ```bash
@@ -42,7 +50,7 @@ Pour l'utilisation dans Visual Studio Code, installer l'extension pour Python.
       
    Puis visite pour accéder à l'interface Swagger : 📍 http://127.0.0.1:8000/docs
 
-3. Sortir de l’environnement de travail
+❌ Quitter l’environnement virtuel
 
       ```bash
     deactivate
