@@ -1,12 +1,15 @@
 # VeilleTechno
 
-## Prérequis
+Prérequis
 ✅Visual Studio Code installé
+
 ✅Extension Python installée dans VS Code
+
 ✅Python 3.10+ installé sur votre système : https://www.python.org/downloads/
+
 ---
 
-##🐍 Mise en place de l'environnement Python:
+🐍 Mise en place de l'environnement Python:
 1. Création de l’environnement de travail Python
     
     ```bash
@@ -27,7 +30,7 @@
 ---
 
  
-##🧠 Entraînement du modèle de classification
+🧠 Entraînement du modèle de classification
 1. Exécuter le script pour entraîner le modèle
     
     ```bash
@@ -36,7 +39,7 @@
 ---
 
     
-##🚀 Démarrage de l’API FastAPI
+🚀 Démarrage de l’API FastAPI
 1. Création de l’environnement de travail Python
     
     ```bash
@@ -53,7 +56,7 @@
 ---
 
 
-##❌ Quitter l’environnement virtuel
+❌ Quitter l’environnement virtuel
 
     ```bash
     deactivate
