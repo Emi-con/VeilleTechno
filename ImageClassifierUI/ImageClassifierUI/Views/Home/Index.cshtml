@@ -3,6 +3,54 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1>Prédiction d'image</h1>
+
+    <div>
+        <p>Cette application vous permet de soumettre une image et d'obtenir une prédiction sur son contenu. Voici les étapes à suivre :</p>
+
+        <p><strong>Sélectionnez une image :</strong> Cliquez sur le bouton " Choisir un fichier" et sélectionnez une image au format courant (JPEG, PNG, etc.) depuis votre appareil.</p>
+        <p><strong>Envoyez l'image pour la prédiction :</strong> Une fois l'image sélectionnée, cliquez sur le bouton "Envoyer". L'application enverra alors l'image à un service (API).</p>
+        <p><strong>Visualisez le résultat :</strong> Après quelques instants de traitement, le service analysera l'image et renverra une prédiction sur ce qu'elle contient (par exemple, "chat", "chien", "oiseau").</p>
+    </div>
+    <form asp-controller="Home" asp-action="Predict" enctype="multipart/form-data" method="post">
+        <input type="file" name="imageFile" accept="image/*" required />
+        <button type="submit">Envoyer</button>
+    </form>
+
+    @if (ViewBag.Base64Image != null)
+    {
+        <div style="margin-top: 10px;">
+            <p>Image soumise :</p>
+            <img src="data:@ViewBag.ImageType;base64,@ViewBag.Base64Image" alt="Image soumise" style="max-width: 300px; height: auto;" />
+        </div>
+    }
+
+    @if (ViewBag.Prediction != null)
+    {
+        <p style="margin-top: 10px;">Résultat de la prédiction : <strong>@ViewBag.Prediction</strong></p>
+    }
+    @if (ViewBag.Probabilite != null)
+    {
+        var probabilites = (Dictionary<string, float>)ViewBag.Probabilite;
+        var maxValue = probabilites.Max(p => p.Value); // Trouver la valeur max
+        <h4>Pourcentages de la prédiction :</h4>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Classe</th>
+                    <th>Prédiction (%)</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in probabilites)
+                {
+                    var isMax = item.Value == maxValue;
+                    <tr class="@(isMax ? "table-success fw-bold" : "")">
+                        <td>@item.Key</td>
+                        <td>@item.Value %</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
 </div>
