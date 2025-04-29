@@ -62,7 +62,14 @@ Prérequis
 
 ❌ Quitter l’environnement virtuel
 
-    ```bash
+     ```bash
     deactivate
     ```
+
+ ---
+
  
+🚀 Après avoir démarré le serveur de l'API, démarré le MVC
+
+
+---
