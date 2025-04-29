@@ -62,9 +62,9 @@ Prérequis
 
 ❌ Quitter l’environnement virtuel
 
-     ```bash
-    deactivate
-    ```
+```bash
+deactivate
+```
 
  ---
 
